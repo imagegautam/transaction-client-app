@@ -18,7 +18,7 @@ const Dashboard = () => {
       <TopNav />
       {/* main body  */}
       <Container className="main pt-2">
-        <h4>Dashboar | Welcome back {loggedInUser?.name}</h4>
+        <h4>Dashboard | Welcome back {loggedInUser?.name}</h4>
         <hr />
         <CustomModal title="Add new transaction">
           <NewTransForm />
