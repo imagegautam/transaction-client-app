@@ -13,8 +13,9 @@ const getUserId = () => {
 
 export const postNewUser = async (userObj) => {
   try {
-    const { data } = await axios.post(userEP, userObj);
-    return data;
+    console.log(userEP)
+    const response = await axios.post(userEP, userObj);
+    return response.data;
   } catch (error) {
     console.log(error);
     return {

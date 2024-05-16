@@ -33,7 +33,7 @@ const Signup = () => {
     if (confirmPassword !== rest.password) {
       return alert("Password do not match, Password must match!");
     }
-
+console.log(rest);
     // call axios to send data to api
     const data = await postNewUser(rest);
     setResp(data);
