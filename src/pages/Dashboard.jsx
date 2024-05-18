@@ -8,6 +8,7 @@ import { TransactionTable } from "../components/TransactionTable";
 
 import { CustomModal } from "../components/CustomModal";
 import { useUser } from "../UserContext";
+import PieChart from "../components/PieChart";
 
 const Dashboard = () => {
   const { loggedInUser, setShowForm } = useUser();
@@ -25,11 +26,13 @@ const Dashboard = () => {
         </CustomModal>
 
         <Row>
+        <Col><PieChart /></Col>
           <Col className="text-end">
             <Button onClick={() => setShowForm(true)}>
               Add New Transaction
             </Button>
           </Col>
+          
         </Row>
         <Row className="mt-5">
           <Col>
