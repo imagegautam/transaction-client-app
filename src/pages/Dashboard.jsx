@@ -8,7 +8,7 @@ import { TransactionTable } from "../components/TransactionTable";
 
 import { CustomModal } from "../components/CustomModal";
 import { useUser } from "../UserContext";
-import PieChart from "../components/PieChart";
+import {PieChart} from "../components/PieChart";
 
 const Dashboard = () => {
   const { loggedInUser, setShowForm } = useUser();
